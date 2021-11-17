@@ -36,6 +36,7 @@ ul {
 html {
   font-family: "MonoLisa", "cooper";
   line-height: 1.5;
+  scroll-behavior: smooth;
 }
 /* 
   1/ vị trí
@@ -173,7 +174,7 @@ html {
 }
 
 /* tour section */
-#tour-section {
+.tour-section {
   background: #000;
 }
 .white-text {
@@ -266,6 +267,9 @@ html {
 .booking-form .booking-contact-email i {
   width: 30px;
 }
+.booking-contact {
+  font-size: 18px;
+}
 
 .booking-info,
 .booking-contact {
@@ -275,15 +279,28 @@ html {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
-  grid-gap: 8px 16px;
+  grid-gap: 0px 16px;
 }
-.booking-info-message {
+.form-control {
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.form-control:focus {
+  border-color: rgb(26, 26, 250);
+}
+.form-control.message {
   grid-column-start: 1;
   grid-column-end: 3;
-  display: block;
+  /* display: block; */
+}
+#form-btn {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 .booking.btn {
   float: right;
+  border: 0;
 }
 .clearfloat:after {
   content: ".";
@@ -294,6 +311,27 @@ html {
 }
 /* MAP */
 .map {
+}
+
+/* footer */
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+#footer .social-list a {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 24px;
+}
+#footer .social-list a:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+#footer #copyright {
+  display: inline-block;
+  margin: 16px 0;
+}
+#copyright a {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.6);
 }
 /* model */
 .model {
@@ -380,4 +418,9 @@ html {
     transform: translateY(0);
   }
 }
-asdawdasdw
+
+@media screen and(max-width:320px) {
+  #main {
+    background-color: red;
+  }
+}

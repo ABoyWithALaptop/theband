@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="/asset/img/favicon.svg" type="image/x-icon">
+    <title>The Band</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -18,10 +19,10 @@
     <div id="main">
       <div id="header">
         <ul id="nav">
-          <li><a href="home">home</a></li>
-          <li><a href="band">band</a></li>
-          <li><a href="tour">tour</a></li>
-          <li><a href="contact">contact</a></li>
+          <li><a href="#">home</a></li>
+          <li><a href="#band">band</a></li>
+          <li><a href="#tour">tour</a></li>
+          <li><a href="#contact">contact</a></li>
           <li>
             <a href="more">more</a>
             <ul class="subnav">
@@ -45,7 +46,7 @@
 
       <div id="content">
         <!-- About Section -->
-        <div class="content-section">
+        <div class="content-section" id="band">
           <h2 class="section-heading">THE BAND</h2>
           <p class="section-sub-heading">we love music</p>
           <p class="about">
@@ -70,7 +71,7 @@
           </p>
 
           <!--Member List start -->
-          <div class="team-selection">
+          <div class="team-selection" >
             <div class="member">
               <p class="member-name">Name</p>
               <img
@@ -99,7 +100,7 @@
           <!-- Member List end -->
         </div>
         <!-- TOUR SECTION -->
-        <div id="tour-section">
+        <div class="tour-section" id="tour">
           <div class="content-section">
             <h2 class="section-heading tour white-text">TOUR DATE</h2>
             <p class="section-sub-heading white-text">
@@ -153,7 +154,7 @@
           </div>
         </div>
         <!-- CONTACT SECTION -->
-        <div class="content-section">
+        <div class="content-section" id ="contact">
           <h2 class="section-heading">CONTACT</h2>
           <p class="section-sub-heading">fan?, drop a note</p>
           <div class="booking-form">
@@ -164,12 +165,14 @@
             </section>
             <div class="booking-info clearfloat">
               <form action="">
-                <input type="text" placeholder="Name" class="booking-info-name">
-                <input type="text" placeholder="Email" class="booking-info-email">
-                <input type="text" placeholder="Message" class="booking-info-message">
-                
+                <input type="text" placeholder="Name" class="form-control name" required>
+                <input type="text" placeholder="Email" class="form-control email" required>
+                <input type="text" placeholder="Message" class="form-control message" required>
+                <div id="form-btn">
+                  <button class="booking btn">SEND</button>
+
+                </div>
               </form>
-              <a href="#" class="booking btn">SEND</a>
             </div>
             
           </div>
@@ -182,14 +185,14 @@
 
       <div id="footer">
         <div class="social-list">
-          <a href=""><i></i></a>
-          <a href=""><i></i></a>
-          <a href=""><i></i></a>
-          <a href=""><i></i></a>
-          <a href=""><i></i></a>
-          <a href=""><i></i></a>
-
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-snapchat"></i></a>
+          <a href=""><i class="fab fa-pinterest-p"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-linkedin-in"></i></a>
         </div>
+        <span id="copyright">Powered by <a href="">w3.css</a></span>
       </div>
     </div>
     <!-- model buy ticket -->
