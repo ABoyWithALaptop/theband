@@ -9,8 +9,36 @@
   }
 }
 
+/* MOBILE AND TABLET */
+@media (max-width: 1023px) {
+  #nav .subnav a {
+    padding: 4px 12px;
+  }
+
+  .btn {
+    padding: 12px 16px;
+  }
+
+  .booking-contact {
+    line-height: 2;
+  }
+
+  .form-control {
+    padding: 13px;
+  }
+
+  #footer .social-list a {
+    font-size: 48px;
+    letter-spacing: 16px;
+  }
+}
+
 /* MOBILE */
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 739px) {
+  .full-width {
+    width: 100%;
+  }
+
   #header {
     overflow: hidden;
   }
@@ -52,12 +80,12 @@
     float: inherit;
   }
   #content .team-selection .member {
-    float: inherit;
+    display: inline-block;
+    float: none;
     width: 100%;
     margin-top: 1rem;
   }
   #content .member .member-img {
-    margin-inline: auto;
     width: 60%;
   }
   #content .member .member-name {
@@ -69,11 +97,14 @@
     width: 100%;
     margin-bottom: 1rem;
   }
+  .place .btn.full-width {
+    text-align: center;
+  }
 
   /* BOOKING FORM */
   .booking-form {
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 32px;
   }
   .booking-info,
   .booking-contact {

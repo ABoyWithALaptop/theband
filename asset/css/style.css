@@ -185,6 +185,7 @@ html {
   margin-top: 15px;
   width: 154px;
   border-radius: 4px;
+  margin-inline: auto;
 }
 
 /* tour section */
@@ -281,6 +282,12 @@ html {
 .booking-form .booking-contact-email i {
   width: 30px;
 }
+
+.booking-contact-number a:hover,
+.booking-contact-email a:hover {
+  text-decoration: underline;
+}
+
 .booking-contact {
   font-size: 18px;
 }
